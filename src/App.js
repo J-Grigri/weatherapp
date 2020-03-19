@@ -1,5 +1,5 @@
 import React, { Component, componentDidMount } from 'react';
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -30,11 +30,11 @@ render(){
   if (!this.state.weather) return <h1>Loading....... </h1>
  
   else return (
-    <div>
+    <div className="outputBox">
       <h1>Weather App</h1>
       <h2>{this.state.weather.name}</h2>
       <h3>{this.state.weather.weather[0].description}</h3>
-      <h3>{this.state.weather.main.temp}</h3>
+      <h3>{this.state.weather.main.temp}°C</h3>
     </div>
   )
 }

@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.outputBox {
+  border: 2px solid aqua;
+  background-color: sandybrown;
+  text-align:center;
+  width:400px;
+  height:300px;
+
+}
