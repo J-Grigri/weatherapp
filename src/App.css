@@ -45,3 +45,7 @@
   height:300px;
 
 }
+
+.forecastContainer {
+  border:1px solid red;
+}

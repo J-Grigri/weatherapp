@@ -1,0 +1,38 @@
+import React from 'react'
+
+
+
+
+
+const DegreeToggle = ({degreeType, updateForecastDegree}) => {
+    return (
+        <React.Fragment>
+            <div className="form-check form-check-inline">
+                <input
+                    class="form-check-input"
+                    type="radio"
+                    name="degree-type"
+                    id="celsius"
+                    value="celsius"
+                    checked={degreeType === "celsius"}
+                    onChange={updateForecastDegree}
+                />
+                <label class="form-check-label" for="celsius">Celsius</label>
+            </div>
+            <div className="form-check form-check-inline">
+                <input
+                    class="form-check-input"
+                    type="radio"
+                    name="degree-type"
+                    id="farenheit"
+                    value="farenheit"
+                    checked={degreeType === "farenheit"}
+                    onChange={updateForecastDegree}
+                />
+                <label class="form-check-label" for="fahrenheit">Fahrenheit</label>
+            </div>
+        </React.Fragment>
+    )
+}
+
+export default DegreeToggle;
